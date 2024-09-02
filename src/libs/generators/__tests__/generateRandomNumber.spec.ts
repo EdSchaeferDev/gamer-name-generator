@@ -9,6 +9,5 @@ test("should return a number", () => {
 });
 test("should return a number with 3 digits", () => {
   const result = generateRandomNumberInRange(10, 20, 3);
-  console.log(result);
   expect(result.toString().length).toBe(3);
 });
