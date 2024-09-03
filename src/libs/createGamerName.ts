@@ -30,7 +30,7 @@ export default function createGamerName(config: GamerNameInputConfig = {}): stri
   let result = `${finalAdj}${finalNoun}${generateRandomNumberInRange(0, 999, numDigits)}`;
   // make sure we're within the range of length provided
   if (result.length > max) {
-    result = result.slice(0, max);
+    result = result.slice(0, max - 1);
   }
   if (result.length < min) {
     result += generateRandomNumberInRange(0, 999, min - result.length);
